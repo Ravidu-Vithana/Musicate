@@ -1,0 +1,48 @@
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+
+$custom-theme-colors: (
+    "grayM":#1a1c1f,
+    "bodyM":#141414,
+    "secondaryM":#9b9c9e,
+    "redM":#e21818,
+);
+
+$theme-colors : map-merge($custom-theme-colors, $theme-colors);
+
+// Custom SASS variables
+
+$input-focus-border-color:tint-color(#e21818, 50%);
+$input-focus-box-shadow: 0 0 0 0.1rem #e218184a;
+
+$form-select-focus-border-color:tint-color(#e21818, 50%);
+$form-select-focus-box-shadow: 0 0 0 0.1rem #e218184a;
+
+$nav-tabs-border-color: #e21818;
+$nav-tabs-link-hover-border-color: #e2181822 #e2181822 $nav-tabs-border-color;
+$nav-tabs-link-active-border-color: #e21818 #e21818 $nav-tabs-link-active-bg;
+$nav-link-color: inherit;
+$nav-link-hover-color: inherit;
+$nav-tabs-link-active-color: #e21818;
+
+$btn-border-radius: 5px;
+$btn-border-radius-sm: 5px;
+$btn-border-radius-lg: 5px;
+
+// $navbar-light-color:#e21818;
+// $navbar-light-hover-color:          rgba($black, .7);
+// $navbar-light-active-color:         rgba($black, .9);
+
+$accordion-bg: rgba(33, 37, 41, 1);
+$accordion-color: #ffffff;
+$accordion-button-bg: rgba(33, 37, 41, 1);
+$accordion-button-color:#ffffff;
+$accordion-border-color: #e21818;
+$accordion-button-active-bg:rgba(33, 37, 41, 1);
+$accordion-button-active-color: #ffffff;
+$accordion-button-focus-border-color: #e21818;
+$accordion-button-focus-box-shadow: 0 0 0 0.1rem #e21818;
+$accordion-icon-color:#ffffff;
+$accordion-icon-active-color:#e21818;
+
+@import '../node_modules/bootstrap/scss/bootstrap';
