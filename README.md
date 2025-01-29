@@ -26,21 +26,25 @@
    ```bash
    git clone https://github.com/Ravidu-Vithana/Musicate.git
    cd Musicate
+   ```
+2. **Dependancy Setup**
+   ```bash
+   npm i
+   ```
    
-2. **Database Setup**:
+3. **Database Setup**:
     - **Import the provided sample database into your MySQL server**
        ```bash
        mysql -u yourUsername -p shop_db < sample_database.sql
        ```
-    - **Update the database connection details in connection.php**
-       ```bash
-       mysql -u yourUsername -p shop_db < sample_database.sql
+       or you an import the file directly through MySQL Workbench.
+    - Create a file named ```connection.php``` and copy and paste the content in ```connection.sample.php```. Configure the values.
 
-3. **Configure Web Server**:
+4. **Configure Web Server**:
     - **Point your web server's document root to the project directory.**
     - **Ensure PHP is enabled and correctly configured on the server.**
 
-4. **Access the Application**:
+5. **Access the Application**:
     - **After installation, you can log in as an admin using sample credentials available in the sample data. Check the users table in your database for login details.**
 
 ### **Usage**:
